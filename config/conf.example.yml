@@ -1,0 +1,32 @@
+# --------------------------------------------------
+#  1. Model & API OpenAI
+# --------------------------------------------------
+openai_model: gpt-4o                # Options: gpt-4o, gpt-4-turbo, etc.
+openai_model_transcript: gpt-4o-transcribe
+openai_model_knowledge: gpt-4o-search-preview-2025-03-11
+openai_api_key: YOUR_API_KEY        # Replace with your OpenAI API key
+verify_ssl: true                    # Recommended in production
+
+# --------------------------------------------------
+#  2. Templates & Knowledge
+# --------------------------------------------------
+template_path: config/templates/template.json         # Path to your tag mapping JSON
+brands_knowledge_dir: config/brand_knowledge   # Folder for brand knowledge files
+
+# --------------------------------------------------
+#  3. Input Data
+# --------------------------------------------------
+
+# --- a. Video files from local folder ---
+input_video_dir: data/input_videos             # Folder containing input videos
+brand_map_path: config/video_to_brand.json     # JSON mapping video to brand  --optional
+
+# --- b. Media metadata from CSV ---
+media_csv_path: data/csv/media_assets.csv      # Path to your CSV file
+media_url_column: "Media URL"                  # Column name for media URLs
+brand_column: "Parent Brand"                   # Column name for brand   -- optional
+
+# --------------------------------------------------
+#  4. Output
+# --------------------------------------------------
+output_dir: data/output                        # Folder to save predictions

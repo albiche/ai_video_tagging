@@ -1,0 +1,57 @@
+{
+    "Quick Asset Pace": {
+        "accepted_values": ["1", "0"],
+        "prompt_ai": "Does the ad change scenes rapidly? Answer '1' for yes, '0' for no.",
+        "frame_method": "regular_1s",
+        "frames_used": "all",
+        "audio": "",
+        "prompt_additional": "",
+        "split_possible": "yes",
+        "split_logic": "or",
+        "key": "quick_asset_pace"
+    },
+    "Logo Presence": {
+        "accepted_values": ["1", "0"],
+        "prompt_ai": "Do you see a brand logo in these images? Answer '1' for yes, '0' for no.",
+        "frame_method": "regular_1s",
+        "frames_used": "all",
+        "audio": "",
+        "prompt_additional": "",
+        "split_possible": "yes",
+        "split_logic": "or",
+        "key": "logo_presence"
+    },
+    "Logo Coverage (in %)": {
+        "accepted_values": "INT",
+        "prompt_ai": "How many frames contain at least the brand logo?",
+        "frame_method": "regular_1s",
+        "frames_used": "all",
+        "audio": "",
+        "prompt_additional": "",
+        "split_possible": "yes",
+        "split_logic": "count-mean",
+        "key": "logo_coverage"
+    },
+    "Overall Vibrant Colors": {
+        "accepted_values": ["1", "0"],
+        "prompt_ai": "Does the overall ad feature vibrant, lively colors? Answer '1' for yes, '0' for no.",
+        "frame_method": "mif",
+        "frames_used": "all",
+        "audio": "",
+        "prompt_additional": "",
+        "split_possible": "no",
+        "split_logic": "or",
+        "key": "overall_vibrant_colors"
+    },
+    "Number of Products": {
+        "accepted_values": "INT",
+        "prompt_ai": "How many distinct products are visible in the ad?",
+        "frame_method": "regroup_1s",
+        "frames_used": "all",
+        "audio": "",
+        "prompt_additional": "",
+        "split_possible": "no",
+        "split_logic": "",
+        "key": "num_products"
+    }
+}
