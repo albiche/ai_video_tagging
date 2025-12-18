@@ -187,4 +187,4 @@ Developed by [authors/organization].
 - License: MIT (modify as needed)
 
 ## Contact
-Questions? Bugs? Ideas? Open an issue or contact [your.email@domain.com].
+Questions? Bugs? Ideas? Open an issue or contact contact@albandanet.fr .
